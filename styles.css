@@ -5,6 +5,248 @@ body {
     padding: 0;
 }
 
+body {
+            background-image: linear-gradient(to bottom, #6c5ce7 0%, #ffffff 100%);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c5ce7;
+            padding: 1em;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header h1 span {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        header h1 span:nth-child(odd) {
+            animation-direction: alternate;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .header-buttons button {
+            background-color: #6c5ce7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 10px;
+        }
+
+        .header-buttons button:hover {
+            background-color: #4b3f8c;
+        }
+
+        .header-buttons .access-community {
+            margin-right: 10px;
+        }
+
+        .header-icon {
+            height: 40px;
+            position: absolute;
+            left: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        section:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #6c5ce7;
+        }
+
+        .service-box {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: box-shadow 0.3s;
+        }
+
+        .service-box:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box i {
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .service-box p {
+            margin-bottom: 20px;
+        }
+
+        .service-box button {
+            background-color: #6c5ce7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .service-box button:hover {
+            background-color: #4b3f8c;
+        }
+
+        .info {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .service-info {
+            background-color: #fff;
+            padding: 2em;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .service-info:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-info .service-box {
+            display: inline-block;
+            width: calc(100% / 3 - 40px);
+            margin: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .service-info .service-box:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #6c5ce7;
+            padding: 1em;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        /* Adicionando a classe 'fade-in-up' para as caixas */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .fade-in-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Adicionando a classe 'floating' para as caixas */
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Adicionando a classe 'highlight' para realçar as caixas */
+        .highlight {
+            box-shadow: 0 0 20px rgba(108, 92, 231, 0.6);
+        }
+
+         #about-us {
+            background-color: #fff;
+            padding: 2em;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px; /* Igual à seção de serviços */
+            width: 100%; /* Adicionado para garantir a largura total quando max-width não for aplicado */
+            text-align: center;
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #about-us:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #about-us p {
+            margin: 1em 0;
+            line-height: 1.5;
+        }
+
 header {
     background-color: #3c3c3c; /* Darker purple background for header */
     padding: 1em;
